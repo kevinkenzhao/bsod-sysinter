@@ -19,4 +19,9 @@ psexec.exe -i \\192.168.0.12 -u Administrator "%USERPROFILE%\SysInternalsBluescr
 psexec.exe \\192.168.0.12 -u Administrator "%USERPROFILE%\notmyfaultc64.exe" crash 0x01
 ```
 
+### Files in Targeted Directory
+
+![alt text](https://github.com/kevinkenzhao/bsod-sysinter/blob/main/file-drop.PNG?raw=true)
+
+
 Reference: https://docs.microsoft.com/en-us/troubleshoot/windows/win32/screen-saver-command-line
