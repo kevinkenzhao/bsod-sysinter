@@ -12,8 +12,8 @@ echo %VAR2%
 psexec.exe \\192.168.0.12 -u Administrator cmd
 curl https://download.sysinternals.com/files/BlueScreen.zip --output %USERPROFILE%\%VAR%.zip
 curl https://download.sysinternals.com/files/NotMyFault.zip --output %USERPROFILE%\%VAR2%.zip
-tar -xf %USERPROFILE%\%VAR%.zip
-tar -xf %USERPROFILE%\%VAR2%.zip
+tar -xf %USERPROFILE%\%VAR%.zip -C %USERPROFILE% REM extract to Administrator's user profile
+tar -xf %USERPROFILE%\%VAR2%.zip -C %USERPROFILE%
 exit
 psexec.exe -i \\192.168.0.12 -u Administrator "%USERPROFILE%\SysInternalsBluescreen.scr" /s Rem Previous interactive Psexec session exited so that another can be spawned in the active user session
 psexec.exe \\192.168.0.12 -u Administrator "%USERPROFILE%\notmyfaultc64.exe" crash 0x01
