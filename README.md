@@ -21,7 +21,8 @@ psexec.exe \\192.168.0.12 -u Administrator "%USERPROFILE%\notmyfaultc64.exe" cra
 
 ### Files in Targeted Directory
 
-![alt text](https://github.com/kevinkenzhao/bsod-sysinter/blob/main/file-drop.PNG?raw=true)
+![alt text](https://github.com/kevinkenzhao/bsod-sysinter/blob/main/file-drop.png?raw=true)
+
 
 
 Reference: https://docs.microsoft.com/en-us/troubleshoot/windows/win32/screen-saver-command-line
